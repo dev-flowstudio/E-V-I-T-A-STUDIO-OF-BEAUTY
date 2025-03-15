@@ -22,3 +22,20 @@ onscroll = () => {
       navbar.style.background = 'none';
    }
 };
+
+
+
+
+var sections = document.querySelectorAll("section");
+var navLinks = document.querySelectorAll("#nav-menu a");
+
+var observer = new IntersectionObserver(entries => {
+   entries.forEach(entry => {
+      if (entry.isIntersecting) {
+         navLinks.forEach(link => link.classList.remove("active"));
+         document.querySelector(`a[href="#${entry.target.id}"]`).classList.add("active");
+      }
+   })
+}, { threshold: 0.6 })
+
+sections.forEach(section => observer.observe(section));
