@@ -14,13 +14,13 @@
    
    /* --- Accent & Interactive Colors --- */
    --button-accent: #F0DDBC;
-   --hover-state: #FF856F;
+   --hover-state: #F0DDBC;
    --border-color: #F0DDBC;
    --warm-accent: #FFB703;
    
    /* --- Link Colors --- */
-   --link-color: #E63946;
-   --link-hover: #C12736;
+   --link-color: #F0DDBC;
+   --link-hover: #F0DDBC;
    
    
    --h1-size: clamp(2rem, 5vw, 3rem);
