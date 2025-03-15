@@ -133,10 +133,16 @@
 
 .about-section .about-right .cta-buttons a {
    padding: 5px 20px;
+   color: var(--primary-text);
    letter-spacing: 2px;
    text-transform: uppercase;
    border: 1.5px solid var(--primary-text);
    margin-right: 10px;
+}
+
+.about-section .about-right .cta-buttons a:hover {
+   color: var(--primary-text);
+   background: var(--hover-state);
 }
 
 .about-section .about-right .cta-buttons a:first-child {
