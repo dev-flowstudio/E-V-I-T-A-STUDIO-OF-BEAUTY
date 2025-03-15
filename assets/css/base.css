@@ -61,7 +61,7 @@ select:focus {
 a:hover,
 button:hover,
 select:hover {
-   color: var(--hover-state);
+   color: var(--link-hover);
 }
 
 /* Reset default browser styles on headings */
@@ -117,7 +117,7 @@ a {
    color: inherit;
    transition: .3s;
    font-family: var(--font-secondary);
-   color: var(--primary-text);
+   color: var(--link-color);
 }
 
 a.href {
