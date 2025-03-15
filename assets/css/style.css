@@ -1,1 +1,195 @@
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./typography.css');
+@import url('./navbar.css');
+@import url('./sidebar.css');
+@import url('./preloader.css');
+@import url('./responsive.css');
+@import url('./footer.css');
 
+
+/* Start of the header section */
+
+.header {
+   height: 100vh;
+   padding: 0 5rem;
+   background: url('../images/hero.png') no-repeat center / cover;
+}
+
+.hero {
+   position: relative;
+   width: 100%;
+   max-width: 1300px;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.hero .hero-content {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+}
+
+.hero-pretitle {
+   color: var(--button-accent);
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-family: var(--font-secondary);
+}
+
+.hero-title {
+   color: var(--headline-text);
+   font-size: 6.5rem;
+   font-weight: 200;
+   letter-spacing: 20px;
+   text-transform: uppercase;
+   line-height: 1.2;
+   margin-bottom: 30px;
+}
+
+.hero-subtitle {
+   width: max-content;
+   color: var(--button-accent);
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-family: var(--font-secondary);
+   padding: 15px 30px;
+   border: 1.5px solid var(--primary-text);
+   margin-bottom: 20px;
+}
+
+.hero-cta-button {
+   color: var(--primary-text);
+   font-size: 1.5rem;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-family: var(--font-secondary);
+}
+
+/* End of the header section */
+
+
+.main {
+   width: 100%;
+}
+
+.section-container {
+   width: 100%;
+   max-width: 1300px;
+   margin: 0 auto;
+}
+
+
+/* Start of the about us section */
+
+.about-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 0 3rem;
+}
+
+.about-section .section-container {
+   display: flex;
+}
+
+.about-section .col {
+   position: relative;
+   height: 500px;
+   overflow: hidden;
+   flex: 1;
+}
+
+.about-section .about-left .image1,
+.about-section .about-left .image2 {
+   position: absolute;
+   width: 300px;
+   top: -200px;
+   right: 100px;
+}
+
+.about-section .about-left .image2 {
+   top: 100px;
+   right: 200px;
+}
+
+.about-section .about-right {
+   padding: 50px 0;
+}
+
+.about-section .section-title {
+   color: var(--primary-text);
+   font-weight: 400;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   border-bottom: 1.5px solid var(--primary-text);
+}
+
+.about-section .about-right .cta-buttons {
+   margin-bottom: 40px;
+}
+
+.about-section .about-right .cta-buttons a {
+   padding: 5px 20px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   border: 1.5px solid var(--primary-text);
+   margin-right: 10px;
+}
+
+.about-section .about-right .cta-buttons a:first-child {
+   background: var(--button-accent);
+}
+
+.about-section .section-subtitle {
+   font-size: 2rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+   font-weight: 100;
+}
+
+.about-section .section-subtitle span {
+   font-weight: 600;
+}
+
+.about-section .text {
+   max-width: 550px;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+}
+
+.about-section .text span {
+   font-weight: 600;
+}
+
+.about-section .address span {
+   font-weight: 600;
+}
+
+/* End of the about us section */
+
+
+/* Start of the services section */
+
+.services-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 0 3rem;
+}
+
+.services-section .section-container {}
+
+.services-section .section-title {
+   color: var(--primary-text);
+   font-weight: 400;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   border-bottom: 1.5px solid var(--primary-text);
+}
+
+/* End of the services section */
