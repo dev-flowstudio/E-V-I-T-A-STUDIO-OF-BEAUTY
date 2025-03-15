@@ -24,6 +24,7 @@
 
 .navbar-container .left-col .nav-logo {
    width: 110px;
+   color: var(--primary-text);
    font-size: .6rem;
    font-weight: bold;
    font-family: var(--font-primary);
@@ -43,6 +44,7 @@
    background: var(--primary-text);
    border: none;
    margin-bottom: 5px;
+   transition: .3s;
 }
 
 .navbar-container .left-col .nav-logo .small-text {
@@ -51,11 +53,11 @@
 }
 
 .navbar-container .left-col .nav-logo:hover {
-   color: var(--button-accent);
+   color: var(--link-hover);
 }
 
 .navbar-container .left-col .nav-logo:hover hr {
-   background: var(--button-accent);
+   background: var(--link-hover);
 }
 
 
@@ -77,9 +79,10 @@
 
 .navbar-container .right-col .nav-menu li a {
    position: relative;
-   text-transform: uppercase;
-   letter-spacing: 3px;
+   color: var(--primary-text);
    font-weight: bold;
+   letter-spacing: 3px;
+   text-transform: uppercase;
 }
 
 .navbar-container .right-col .nav-menu li a::before {
@@ -92,13 +95,13 @@
    background: var(--border-color);
    transform: scaleX(0);
    transform-origin: center;
-   transition: .3s;
 }
 
 .navbar-container .right-col .nav-menu li a:hover,
 .navbar-container .right-col .nav-menu li a:hover::before,
+.navbar-container .right-col .nav-menu li a.active,
 .navbar-container .right-col .nav-menu li a.active::before {
-   color: var(--button-accent);
+   color: var(--link-hover);
    transform: scaleX(1);
 }
 
@@ -108,9 +111,14 @@
 
 
 .navbar-container .right-col .enroll-btn {
-   padding: 5px 30px;
-   text-transform: uppercase;
-   border: 1px solid var(--border-color);
    color: var(--button-accent);
+   border: 1px solid var(--border-color);
+   padding: 5px 30px;
    letter-spacing: 3px;
+   text-transform: uppercase;
+}
+
+.navbar-container .right-col .enroll-btn:hover {
+   color: var(--primary-text);
+   background: var(--hover-state);
 }
