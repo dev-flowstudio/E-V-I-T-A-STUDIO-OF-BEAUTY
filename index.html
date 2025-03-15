@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- 1. Character Encoding & Viewport (Always First) -->
+   <meta charset="UTF-8"> <!-- Defines character encoding -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Improves IE compatibility -->
+   
+   <!-- 2. SEO Meta Tags -->
+   <title>E V I T A - STUDIO OF BEAUTY</title> <!-- Page title (Shown in browser tab & search results) -->
+   <meta name="description" content="your meta description"> <!-- Important for SEO -->
+   <meta name="keywords" content="keyword1, keyword2, keyword3"> <!-- Optional for SEO -->
+   <meta name="author" content="flowstudio"> <!-- Author information -->
+   <meta name="robots" content="index, follow"> <!-- Controls search engine crawling -->
+   <meta name="googlebot" content="index, follow"> <!-- Google-specific crawling instructions -->
+   <meta name="bingbot" content="index, follow"> <!-- Bing-specific crawling instructions -->
+   <meta name="yandexbot" content="index, follow"> <!-- Yandex-specific crawling instructions -->
+   <meta name="baiduspider" content="index, follow"> <!-- Baidu-specific crawling instructions -->
+   <meta name="duckduckbot" content="index, follow"> <!-- DuckDuckGo-specific crawling instructions -->
+   <meta name="naverbot" content="index, follow"> <!-- Naver-specific crawling instructions -->
+   <link rel="canonical" href="https://flowstudio.site/"> <!-- Helps prevent duplicate content issues -->
+   
+   <!-- 3. Verification Meta Tags (For Google, Bing, Yandex, etc.) -->
+   <meta name="google-site-verification" content="your_google_verification_code">
+   <meta name="msvalidate.01" content="your_bing_verification_code">
+   <meta name="yandex-verification" content="your_yandex_verification_code">
+   <meta name="baidu-site-verification" content="your_baidu_verification_code">
+   <meta name="naver-site-verification" content="your_naver_verification_code">
+   
+   <!-- 4. Social Media Meta Tags (Open Graph & Twitter Cards) -->
+   <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+   <meta property="og:title" content="E V I T A - STUDIO OF BEAUTY">
+   <meta property="og:description" content="your meta description">
+   <meta property="og:image" content="https://yourwebsite.com/your-og-image.jpg">
+   <meta property="og:url" content="https://yourwebsite.com/your-page-url">
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="E V I T A - STUDIO OF BEAUTY">
+   
+   <!-- Twitter Cards -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="E V I T A - STUDIO OF BEAUTY">
+   <meta name="twitter:description" content="your meta description">
+   <meta name="twitter:image" content="https://yourwebsite.com/your-twitter-image.jpg">
+   <meta name="twitter:site" content="@your_twitter_handle">
+   
+   <!-- 5. Performance Optimization Meta Tags -->
+   <meta name="theme-color" content="#ffffff"> <!-- Sets theme color for mobile browsers -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- iOS Safari styling -->
+   <meta name="format-detection" content="telephone=no"> <!-- Prevents iOS from linking phone numbers automatically -->
+   
+   <!-- 6. Favicon & Icons -->
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/favicon-192x192.png">
+   <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+   
+   <!-- SVG Favicon (for modern browsers) -->
+   <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+   
+   <!-- Apple Touch Icons (for iOS home screen shortcut) -->
+   <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-touch-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
+   
+   <!-- Android Chrome Icons -->
+   <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/android-chrome-192x192.png">
+   <link rel="icon" type="image/png" sizes="512x512" href="./assets/icons/android-chrome-512x512.png">
+   
+   <!-- Alternative favicon (optional, for legacy browsers) -->
+   <link rel="shortcut icon" href="./assets/icons/favicon.ico">
+   
+   <!-- Microsoft Tiles (For Windows 10/Edge) -->
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="./assets/icons/mstile-144x144.png">
+   
+   <!-- 7. Mobile App Indexing (Google Play & Apple App Store) -->
+   <meta name="google-play-app" content="app-id=com.example.app">
+   <meta name="apple-itunes-app" content="app-id=123456789">
+   
+   <!-- 8. Security & Privacy Meta Tags -->
+   <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+   <meta name="referrer" content="no-referrer">
+   
+   <!-- 9. HTTP-Equiv Meta Tags -->
+   <!-- <meta http-equiv="refresh" content="5; url=https://yourwebsite.com"> -->
+   <meta http-equiv="cache-control" content="no-cache">
+   <meta http-equiv="pragma" content="no-cache">
+   <meta http-equiv="expires" content="Wed, 21 Oct 2025 07:28:00 GMT">
+   
+   <!-- 10. Preconnect for Faster External Resource Loading -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://cdn.jsdelivr.net">
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+   <link rel="preload" href="/your-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   
+   <!-- 11. External CSS Stylesheets -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   
+   <!-- 12. Critical Inline CSS -->
+   <style>
+      /* Add critical inline CSS here */
+   </style>
+   
+   <!-- 13. JavaScript Files (Use async or defer) -->
+   <script async src="https://cdn.jsdelivr.net/npm/your-js-library.js"></script>
+   <script async src="https://cdnjs.cloudflare.com/ajax/libs/your-js-framework.js"></script>
+   <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+   <div class="preloader">
+      <div class="loader">
+         <h2><span>E</span> <span>V</span> <span>I</span> <span>T</span> <span>A</span></h2>
+      </div>
+   </div>
+   
+   <nav id="navbar" class="navbar">
+      <div class="navbar-container">
+         <div class="left-col">
+            <a href="./index.html" class="nav-logo">
+               <span class="big-text">E V I T A</span>
+               <hr>
+               <span class="small-text">Studio of beauty</span>
+            </a>
+            <button class="hamburger-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+         </div>
+         
+         <div class="right-col">
+            <ul class="nav-menu">
+               <li><a class="active" href="#header">Home</a></li>
+               <li><a href="#about">About us</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#products">Products</a></li>
+               <li><a href="#contact">Contacts</a></li>
+            </ul>
+            
+            <a href="javascript:void(0)" class="enroll-btn">Enroll</a>
+         </div>
+      </div>
+   </nav>
+   
+   <header id="header" class="header">
+      <section class="hero">
+         <div class="hero-content">
+            <p class="hero-pretitle">The best beauty salon in your city</p>
+            <h1 class="hero-title">Care && <br> beauty.</h1>
+            <p class="hero-subtitle">Get 20% discount on the first visit</p>
+            <a href="Javascript:void(0)" class="hero-cta-button"><i class="bi bi-arrow-right"></i> Register online</a>
+         </div>
+      </section>
+   </header>
+   
+   <main id="main" class="main">
+      <section id="about" class="about-section">
+         <div class="section-container">
+            <aside class="col about-left">
+               <img src="./assets/images/Rectangle 8.png" alt="" class="image1">
+               <img src="./assets/images/Rectangle 7.png" alt="" class="image2">
+            </aside>
+            <aside class="col about-right">
+               <h2 class="section-title">About us</h2>
+               
+               <div class="cta-buttons">
+                  <a href="javascript:void(0)">M. cska</a>
+                  <a href="javascript:void(0)">M. river station</a>
+               </div>
+               
+               <p class="section-subtitle"><span>Evita studio</span> on khodynka</p>
+               <p class="text">In <span>Evita studio</span> on Khodynka, all procedures are performed on modern equipment using the latest beauty technologies and techniques. a wide range of services, as well as the high professionalism of the salon's masters, allow us to fulfill the most diverse wishes of customers and find an individual approach to everyone.</p>
+               <p class="address">Petroza vodskaya st., 22, building 1, <br> from 10.00 to 22.00 <br> <span>+74957870057</span></p>
+            </aside>
+         </div>
+      </section>
+      
+      
+      <section id="services" class="services-section">
+         <div class="section-container">
+            <h2 class="section-title">Services</h2>
+         </div>
+      </section>
+   </main>
+   
+   <script src="https://kit.fontawesome.com/94a745351e.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="./assets/js/script.js"></script>
+</body>
+
+                                        </html>
