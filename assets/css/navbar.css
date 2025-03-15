@@ -1,0 +1,116 @@
+.navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 1rem 2rem;
+   z-index: 90;
+}
+
+.navbar-container {
+   width: 100%;
+   max-width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar-container .left-col {
+   display: flex;
+   align-items: center;
+   flex: 1;
+}
+
+.navbar-container .left-col .nav-logo {
+   width: 110px;
+   font-size: .6rem;
+   font-weight: bold;
+   font-family: var(--font-primary);
+   text-transform: uppercase;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.navbar-container .left-col .nav-logo .big-text {
+   font-size: 1.8rem;
+}
+
+.navbar-container .left-col .nav-logo hr {
+   width: 100%;
+   height: 2px;
+   background: var(--primary-text);
+   border: none;
+   margin-bottom: 5px;
+}
+
+.navbar-container .left-col .nav-logo .small-text {
+   letter-spacing: 2px;
+   font-family: var(--font-secondary);
+}
+
+.navbar-container .left-col .nav-logo:hover {
+   color: var(--button-accent);
+}
+
+.navbar-container .left-col .nav-logo:hover hr {
+   background: var(--button-accent);
+}
+
+
+
+.navbar-container .right-col {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex: 2;
+}
+
+.navbar-container .right-col .nav-menu {
+   display: flex;
+}
+
+.navbar-container .right-col .nav-menu li {
+   margin-right: 20px;
+}
+
+.navbar-container .right-col .nav-menu li a {
+   position: relative;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-weight: bold;
+}
+
+.navbar-container .right-col .nav-menu li a::before {
+   position: absolute;
+   content: "";
+   top: 120%;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background: var(--border-color);
+   transform: scaleX(0);
+   transform-origin: center;
+   transition: .3s;
+}
+
+.navbar-container .right-col .nav-menu li a:hover,
+.navbar-container .right-col .nav-menu li a:hover::before,
+.navbar-container .right-col .nav-menu li a.active::before {
+   color: var(--button-accent);
+   transform: scaleX(1);
+}
+
+
+
+
+
+
+.navbar-container .right-col .enroll-btn {
+   padding: 5px 30px;
+   text-transform: uppercase;
+   border: 1px solid var(--border-color);
+   color: var(--button-accent);
+   letter-spacing: 3px;
+}
