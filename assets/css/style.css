@@ -150,15 +150,15 @@
 }
 
 .about-section .section-subtitle {
-   font-size: 2rem;
+   font-size: var(--h4-size);
    text-transform: uppercase;
-   letter-spacing: 2px;
+   letter-spacing: 3px;
    margin-bottom: 10px;
-   font-weight: lighter;
+   font-weight: 300;
 }
 
 .about-section .section-subtitle span {
-   font-weight: bold;
+   font-weight: bolder;
 }
 
 .about-section .text {
@@ -168,7 +168,7 @@
 }
 
 .about-section .text span {
-   font-weight: bold;
+   font-weight: bolder;
 }
 
 .about-section .address {
@@ -176,7 +176,7 @@
 }
 
 .about-section .address span {
-   font-weight: bold;
+   font-weight: bolder;
 }
 
 /* End of the about us section */
