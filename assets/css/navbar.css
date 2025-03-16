@@ -23,9 +23,9 @@
 }
 
 .navbar-container .left-col .nav-logo {
-   width: 110px;
+   width: max-content;
    color: var(--primary-text);
-   font-size: .6rem;
+   font-size: 1.8rem;
    font-weight: bold;
    font-family: var(--font-primary);
    text-transform: uppercase;
@@ -35,7 +35,6 @@
 }
 
 .navbar-container .left-col .nav-logo .big-text {
-   font-size: 1.8rem;
 }
 
 .navbar-container .left-col .nav-logo hr {
@@ -49,7 +48,8 @@
 
 .navbar-container .left-col .nav-logo .small-text {
    letter-spacing: 2px;
-   font-family: var(--font-secondary);
+   font-size: .6rem;
+   font-family: var(--font-accent);
 }
 
 .navbar-container .left-col .nav-logo:hover {
@@ -66,7 +66,7 @@
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   flex: 2;
+   flex: 3;
 }
 
 .navbar-container .right-col .nav-menu {
