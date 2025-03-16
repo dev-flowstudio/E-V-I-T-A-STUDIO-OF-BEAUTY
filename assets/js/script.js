@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Change navbar background color on scroll
-var navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.navbar');
 
 onscroll = () => {
    if (pageYOffset > 0) {
@@ -26,10 +26,10 @@ onscroll = () => {
 
 
 
-var sections = document.querySelectorAll("section");
-var navLinks = document.querySelectorAll("#nav-menu a");
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("#nav-menu a");
 
-var observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver(entries => {
    entries.forEach(entry => {
       if (entry.isIntersecting) {
          navLinks.forEach(link => link.classList.remove("active"));
