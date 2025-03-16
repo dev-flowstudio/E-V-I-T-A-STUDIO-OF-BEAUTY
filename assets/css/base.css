@@ -116,7 +116,7 @@ h6 {
 a {
    color: inherit;
    transition: .3s;
-   font-family: var(--font-secondary);
+   font-family: var(--font-accent);
    color: var(--link-color);
 }
 
