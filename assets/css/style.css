@@ -35,13 +35,13 @@
    color: var(--button-accent);
    text-transform: uppercase;
    letter-spacing: 2px;
-   font-family: var(--font-secondary);
+   font-family: var(--font-accent);
 }
 
 .hero-title {
    color: var(--headline-text);
    font-size: 6.5rem;
-   font-weight: 200;
+   font-weight: 350;
    letter-spacing: 20px;
    text-transform: uppercase;
    line-height: 1.2;
@@ -53,7 +53,7 @@
    color: var(--button-accent);
    letter-spacing: 2px;
    text-transform: uppercase;
-   font-family: var(--font-secondary);
+   font-family: var(--font-accent);
    padding: 15px 30px;
    border: 1.5px solid var(--primary-text);
    margin-bottom: 20px;
@@ -64,7 +64,7 @@
    font-size: 1.5rem;
    letter-spacing: 2px;
    text-transform: uppercase;
-   font-family: var(--font-secondary);
+   font-family: var(--font-accent);
 }
 
 /* End of the header section */
@@ -154,11 +154,11 @@
    text-transform: uppercase;
    letter-spacing: 2px;
    margin-bottom: 10px;
-   font-weight: 100;
+   font-weight: lighter;
 }
 
 .about-section .section-subtitle span {
-   font-weight: 600;
+   font-weight: bold;
 }
 
 .about-section .text {
@@ -168,11 +168,15 @@
 }
 
 .about-section .text span {
-   font-weight: 600;
+   font-weight: bold;
+}
+
+.about-section .address {
+   letter-spacing: 3px;
 }
 
 .about-section .address span {
-   font-weight: 600;
+   font-weight: bold;
 }
 
 /* End of the about us section */
