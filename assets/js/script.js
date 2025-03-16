@@ -1,10 +1,12 @@
-// Basic DOMContentLoaded function
-document.addEventListener('DOMContentLoaded', function() {
+window.onload = () => {
    const preloader = document.querySelector('.preloader');
    setTimeout(() => {
       preloader.style.display = 'none';
    }, 1000);
-   
+}
+
+// Basic DOMContentLoaded function
+document.addEventListener('DOMContentLoaded', function() {
    // Set the header height to window height
    const header = document.querySelector('.header');
    header.style.height = window.innerHeight + 'px';
