@@ -111,6 +111,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="./assets/package/swiper-bundle.min.css">
    <link rel="stylesheet" href="./assets/css/style.css">
    
    <!-- 12. Critical Inline CSS -->
@@ -121,7 +122,8 @@
    <!-- 13. JavaScript Files (Use async or defer) -->
    <!-- <script async src="https://kit.fontawesome.com/94a745351e.js" crossorigin="anonymous"></script> -->
    <!-- <script async src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
-   <script async src="./assets/js/script.js"></script>
+   <script defer src="./assets/package/swiper-bundle.min.js"></script>
+   <script defer src="./assets/js/script.js"></script>
 </head>
 
 <body>
@@ -171,13 +173,13 @@
          </div>
       </div>
    </header>
-   
-   <main id="main" class="main">
+
+  <main id="main" class="main">
       <section id="about" class="about-section">
          <div class="section-container">
             <aside class="col about-left">
-               <img src="./assets/images/Rectangle 8.png" alt="" class="image1">
-               <img src="./assets/images/Rectangle 7.png" alt="" class="image2">
+               <img src="./assets/images/about1.png" alt="" class="image1">
+               <img src="./assets/images/about2.png" alt="" class="image2">
             </aside>
             <aside class="col about-right">
                <h2 class="section-title">About us</h2>
@@ -189,7 +191,7 @@
                
                <p class="section-subtitle"><span>Evita studio</span> on khodynka</p>
                <p class="text">In <span>Evita studio</span> on Khodynka, all procedures are performed on modern equipment using the latest beauty technologies and techniques. a wide range of services, as well as the high professionalism of the salon's masters, allow us to fulfill the most diverse wishes of customers and find an individual approach to everyone.</p>
-               <p class="address">Petroza vodskaya st., 22, building 1, <br> from 10.00 to 22.00 <br> <span>+7 495 787 00 57</span></p>
+               <p class="address">Petroza vodskaya st., 22, building 1, <br> from 10.00 to 22.00 <br> <span>+7 (495) 787 00 57</span></p>
             </aside>
          </div>
       </section>
@@ -197,10 +199,380 @@
       
       <section id="services" class="services-section">
          <div class="section-container">
-            <h2 class="section-title">Services</h2>
+            <div class="section-header">
+               <h2 class="section-title">Services</h2>
+               <a class="link" href="javascript:void(0)"><i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="services-cards">
+               <div class="card">
+                  <div class="card__content">
+                     <h3 class="card__title">Haircuts</h3>
+                     <div class="">
+                        <span class="sub__services">Hair cuts, shortenings, trims</span>
+                        <p class="cost">OT <span>05.10</span></p>
+                     </div>
+                     <img src="./assets/images/image 7 (1).png" alt="" class="card__image">
+                  </div>
+                  <p class="tagline">Hair, Styling, Grooming, Coloring, Hair, Styling, Grooming</p>
+               </div>
+               
+               <div class="card">
+                  <div class="card__content">
+                     <h3 class="card__title">Layering</h3>
+                     <div class="">
+                        <span class="sub__services">Hair cuts, shortenings, trims</span>
+                        <p class="cost">OT <span>07.10</span></p>
+                     </div>
+                     <img src="./assets/images/image 7 (1).png" alt="" class="card__image">
+                  </div>
+                  <p class="tagline">Hair, Styling, Grooming, Coloring, Hair, Styling, Grooming</p>
+               </div>
+               
+               <div class="card">
+                  <div class="card__content">
+                     <h3 class="card__title">Coloring</h3>
+                     <div class="">
+                        <span class="sub__services">Hair cuts, shortenings, trims</span>
+                        <p class="cost">OT <span>11.10</span></p>
+                     </div>
+                     <img src="./assets/images/image 7 (1).png" alt="" class="card__image">
+                  </div>
+                  <p class="tagline">Hair, Styling, Grooming, Coloring, Hair, Styling, Grooming</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      
+      
+      <section id="advantages" class="advantages-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Advantages</h2>
+               <a class="link" href="javascript:void(0)">View all <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="section-body">
+               <div class="left">
+                  <div class="advantage-items">
+                     <a href="javascript:void(0)" class="advantage-item">Luxurious SPA area</a>
+                     <a href="javascript:void(0)" class="advantage-item">Time saving</a>
+                     <a href="javascript:void(0)" class="advantage-item">Service and comfort</a>
+                     <a href="javascript:void(0)" class="advantage-item">Modern procedures</a>
+                     <a href="javascript:void(0)" class="advantage-item">Wide range of cosmetics</a>
+                     <a href="javascript:void(0)" class="advantage-item">The most professional masters</a>
+                  </div>
+                  
+                  <a href="javascript:void(0)" class="section-cta">Sign up online</a>
+               </div>
+               <div class="right">
+                  <img src="./assets/images/advantages.png" alt="" class="image">
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      
+      <section id="discounts" class="discounts-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Get discounts for <sub>4</sub> months from your <br>first visit</h2>
+            </div>
+            
+            <div class="section-body">
+               <div class="left">
+                  <div class="text-cards">
+                     <div class="text-card">
+                        <span>1 visit</span>
+                        <p>15% discount on all <br> products and services</p>
+                     </div>
+                     <div class="text-card">
+                        <span>2 visit</span>
+                        <p>10% discount on all <br> products and services</p>
+                     </div>
+                     <div class="text-card">
+                        <span>3 visit</span>
+                        <p>Gift card and <br> 10% discount</p>
+                     </div>
+                     <div class="text-card">
+                        <span>4 visit</span>
+                        <p>Gift card</p>
+                     </div>
+                  </div>
+                  
+                  <div class="section-cta-buttons">
+                     <a class="button button1" href="javascript:void(0)">Give</a>
+                     <a class="button button2" href="javascript:void(0)">Sign up online</a>
+                  </div>
+               </div>
+               
+               <div class="right">
+                  <div class="grid">
+                     <div class="grid-item grid-item1">
+                        <img src="./assets/images/discount1.png" alt="">
+                     </div>
+                     
+                     <div class="grid-item grid-item2">
+                        <img src="./assets/images/discount2.png" alt="">
+                     </div>
+                     
+                     <div class="grid-item grid-item3">
+                        <img src="./assets/images/discount3.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      
+      
+      <section id="portfolio" class="portfolio-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Portfolio</h2>
+               <a class="link" href="javascript:void(0)">View all <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="section-body">
+               <div class="grid">
+                  <div class="grid-item item1"><img src="./assets/images/portfolio1.png" alt="" class="image"></div>
+                  <div class="grid-item item2"><img src="./assets/images/portfolio2.png" alt="" class="image"></div>
+                  <div class="grid-item item3"><img src="./assets/images/portfolio3.png" alt="" class="image"></div>
+                  <div class="grid-item item4"><img src="./assets/images/portfolio4.png" alt="" class="image"></div>
+                  <div class="grid-item item5"><img src="./assets/images/portfolio5.png" alt="" class="image"></div>
+                  <div class="grid-item item6"><img src="./assets/images/portfolio6.png" alt="" class="image"></div>
+                  <div class="grid-item item7"><img src="./assets/images/portfolio7.png" alt="" class="image"></div>
+                  <div class="grid-item item8"><img src="./assets/images/portfolio8.png" alt="" class="image"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      
+      
+      <section id="promotions" class="promotions-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Promotions</h2>
+               <a class="link" href="javascript:void(0)">View all <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="section-body">
+            </div>
+         </div>
+      </section>
+      
+      
+      <section id="products" class="products-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Products</h2>
+               <a class="link" href="javascript:void(0)">View all <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="section-body">
+               <div class="product-slider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide product__item">
+                        <div class="item__image">
+                           <img src="./assets/images/product1.png" alt="">
+                        </div>
+                        
+                        <div class="item__body">
+                           <p class="item__title">Korean products <br>atomy global</p>
+                           <div>
+                              <p class="item__description">Cream series from atomy korean cosmetics with vitamins</p>
+                              <p class="item__cost">From 1700$</p>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                     <div class="swiper-slide product__item">
+                        <div class="item__image">
+                           <img src="./assets/images/product2.png" alt="">
+                        </div>
+                        
+                        <div class="item__body">
+                           <p class="item__title">Korean products <br>atomy global</p>
+                           <div>
+                              <p class="item__description">Cream series from atomy korean cosmetics with vitamins</p>
+                              <p class="item__cost">From 1700$</p>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                     <div class="swiper-slide product__item">
+                        <div class="item__image">
+                           <img src="./assets/images/product3.png" alt="">
+                        </div>
+                        
+                        <div class="item__body">
+                           <p class="item__title">Korean products <br>atomy global</p>
+                           <div>
+                              <p class="item__description">Cream series from atomy korean cosmetics with vitamins</p>
+                              <p class="item__cost">From 1700$</p>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="swiper-slide product__item">
+                        <div class="item__image">
+                           <img src="./assets/images/product1.png" alt="">
+                        </div>
+                        
+                        <div class="item__body">
+                           <p class="item__title">Korean products <br>atomy global</p>
+                           <div>
+                              <p class="item__description">Cream series from atomy korean cosmetics with vitamins</p>
+                              <p class="item__cost">From 1700$</p>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                     <div class="swiper-slide product__item">
+                        <div class="item__image">
+                           <img src="./assets/images/product2.png" alt="">
+                        </div>
+                        
+                        <div class="item__body">
+                           <p class="item__title">Korean products <br>atomy global</p>
+                           <div>
+                              <p class="item__description">Cream series from atomy korean cosmetics with vitamins</p>
+                              <p class="item__cost">From 1700$</p>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                     <div class="swiper-slide product__item">
+                        <div class="item__image">
+                           <img src="./assets/images/product3.png" alt="">
+                        </div>
+                        
+                        <div class="item__body">
+                           <p class="item__title">Korean products <br>atomy global</p>
+                           <div>
+                              <p class="item__description">Cream series from atomy korean cosmetics with vitamins</p>
+                              <p class="item__cost">From 1700$</p>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                     <div class="swiper-slide product__item">
+                        <div class="item__image">
+                           <img src="./assets/images/product4.png" alt="">
+                        </div>
+                        
+                        <div class="item__body">
+                           <p class="item__title">Korean products <br>atomy global</p>
+                           <div>
+                              <p class="item__description">Cream series from atomy korean cosmetics with vitamins</p>
+                              <p class="item__cost">From 1700$</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="controllers">
+                     <div class="swiper-scrollbar scrollbar"></div>
+                     <div class="product-slider-button-next"><i class="bi bi-arrow-right"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      
+      <section id="staff" class="staff-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Our staff</h2>
+               <a class="link" href="javascript:void(0)">View all <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="section-body">
+            </div>
+         </div>
+      </section>
+      
+      
+      
+      <section id="reviews" class="reviews-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Reviews</h2>
+               <a class="link" href="javascript:void(0)">View all <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="section-body">
+            </div>
+         </div>
+      </section>
+      
+      
+      
+      <section id="newsletter" class="newsletter-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="tagline">Special offer 20% <br> for the first visit</h2>
+            </div>
+            
+            <div class="section-body">
+               <p class="text">We will contact you within minutes and book you on a convenient date! By clicking <br> on the button, you consent to the processing of personal data and agree to the privacy policy</p>
+               
+               <form id="subscriptionForm">
+                  <input class="inputBar" type="email" id="email" placeholder="Enter your email" required>
+                  <button class="submitBtn" type="submit">Subscribe</button>
+               </form>
+            </div>
+         </div>
+      </section>
+      
+      
+      
+      
+      <section id="contacts" class="contacts-section">
+         <div class="section-container">
+            <div class="section-header">
+               <h2 class="section-title">Contacts</h2>
+            </div>
+            
+            <div class="section-body">
+               <div class="left">
+                  <h3 class="headline">Connect <br>with us</h3>
+                  <p class="contact-info">
+                     +7 (495) 787 00 57 <br>
+                     info@evitastudio.ru <br>
+                     pr@evitastudio.ru<span>(по вопросам рекламы)</span>
+                  </p>
+               </div>
+               <div class="right">
+                  <div class="map">
+                     <img src="./assets/images/map.png" alt="Evita studio location map">
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
    </main>
+   
+   
+   
+   <footer id="footer" class="footer">
+      <div class="footer-container">
+         
+      </div>
+   </footer>
+   
+   
 </body>
 
 </html>
