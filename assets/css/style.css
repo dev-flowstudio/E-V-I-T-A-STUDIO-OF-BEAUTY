@@ -1,1 +1,1053 @@
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./typography.css');
+@import url('./navbar.css');
+@import url('./sidebar.css');
+@import url('./preloader.css');
+@import url('./responsive.css');
+@import url('./footer.css');
 
+
+/* Start of the header section */
+
+.header {
+   height: 100vh;
+   padding: 0 5rem;
+   background: url('../images/hero.png') no-repeat center / cover;
+}
+
+.hero {
+   position: relative;
+   width: 100%;
+   max-width: 1300px;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.hero .hero-content {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+}
+
+.hero-pretitle {
+   color: var(--button-accent);
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-family: var(--font-accent);
+}
+
+.hero-title {
+   color: var(--headline-text);
+   font-size: clamp(2rem, 10vw, 6.5rem);
+   font-weight: 350;
+   letter-spacing: 20px;
+   text-transform: uppercase;
+   line-height: 1.2;
+   margin-bottom: 30px;
+}
+
+.hero-subtitle {
+   width: max-content;
+   color: var(--button-accent);
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-family: var(--font-accent);
+   padding: 15px 30px;
+   border: 1.5px solid var(--primary-text);
+   margin-bottom: 20px;
+}
+
+.hero-cta-button {
+   color: var(--primary-text);
+   font-size: 1.5rem;
+   font-size: clamp(.5rem, 1vw, 1.5rem);
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-family: var(--font-accent);
+}
+
+/* End of the header section */
+
+
+.main {
+   width: 100%;
+}
+
+.section-container {
+   width: 100%;
+   max-width: 1300px;
+   margin: 0 auto;
+}
+
+
+/* Start of the about us section */
+
+.about-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 0 3rem;
+}
+
+.about-section .section-container {
+   display: flex;
+}
+
+.about-section .col {
+   position: relative;
+   height: 500px;
+   overflow: hidden;
+   flex: 1;
+}
+
+.about-section .about-left .image1,
+.about-section .about-left .image2 {
+   position: absolute;
+   width: 300px;
+   top: -200px;
+   right: 100px;
+}
+
+.about-section .about-left .image2 {
+   top: 100px;
+   right: 200px;
+}
+
+.about-section .about-right {
+   padding: 50px 0;
+}
+
+.about-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   border-bottom: 1.5px solid var(--primary-text);
+}
+
+.about-section .about-right .cta-buttons {
+   margin-bottom: 40px;
+}
+
+.about-section .about-right .cta-buttons a {
+   padding: 5px 20px;
+   color: var(--primary-text);
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   border: 1.5px solid var(--primary-text);
+   margin-right: 10px;
+}
+
+.about-section .about-right .cta-buttons a:hover {
+   color: var(--primary-text);
+   background: var(--hover-state);
+}
+
+.about-section .about-right .cta-buttons a:first-child {
+   background: var(--button-accent);
+}
+
+.about-section .section-subtitle {
+   font-size: var(--h5-size);
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   margin-bottom: 10px;
+   font-weight: 300;
+}
+
+.about-section .section-subtitle span {
+   font-weight: bolder;
+}
+
+.about-section .text {
+   max-width: 550px;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+}
+
+.about-section .text span {
+   font-weight: bolder;
+}
+
+.about-section .address {
+   letter-spacing: 3px;
+}
+
+.about-section .address span {
+   font-weight: bolder;
+}
+
+/* End of the about us section */
+
+
+
+
+
+
+/* Start of the services section */
+
+.services-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.services-section .section-container {}
+
+.services-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.services-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.services-section .link {
+   color: var(--primary-text);
+   font-size: var(--h4-size);
+}
+
+
+.services-section .services-cards {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 50px;
+}
+
+.services-section .card {
+   display: flex;
+   max-height: 350px;
+   overflow: hidden;
+   flex: 1;
+}
+
+.services-section .card:hover {
+   background: var(--hover-state);
+   transition: .3s;
+}
+
+.services-section .card .tagline {
+   writing-mode: vertical-lr;
+   margin-left: 10px;
+}
+
+.services-section .card .card__image {
+   width: 100%;
+}
+
+.services-section .card .card__title {
+   margin-bottom: 50px;
+}
+
+
+.services-section .card .card__title+div {
+   display: flex;
+   justify-content: space-between;
+}
+
+.services-section .card .sub__services {
+   width: 150px;
+}
+
+
+.services-section .card .cost span {
+   font-size: var(--h3-size);
+}
+
+/* End of the services section */
+
+
+
+
+
+
+/* Start of the advantages section */
+
+
+.advantages-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.advantages-section .section-container {}
+
+.advantages-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.advantages-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.advantages-section .link {
+   color: var(--primary-text);
+   font-weight: bolder;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: flex;
+   align-items: center;
+}
+
+.advantages-section .link i {
+   font-size: var(--h4-size);
+   margin-left: 10px;
+}
+
+
+
+
+.advantages-section .section-body {
+   display: flex;
+}
+
+.advantages-section .left,
+.advantages-section .right {
+   flex: 1;
+}
+
+.advantages-section .advantage-items {
+   margin-bottom: 20px;
+}
+
+.advantages-section .advantage-item {
+   color: var(--primary-text);
+   display: block;
+   font-size: var(--h5-size);
+   font-weight: 300;
+   font-family: var(--font-secondary);
+   letter-spacing: 2px;
+   border-bottom: 1px solid var(--primary-text);
+   padding: 5px 20px;
+   margin-bottom: 40px;
+}
+
+.advantages-section .section-cta {
+   display: block;
+   width: 100%;
+   max-width: 400px;
+   color: var(--primary-text);
+   letter-spacing: 1px;
+   font-family: var(--font-accent);
+   font-size: var(--h5-size);
+   font-weight: bolder;
+   text-align: center;
+   padding: 15px 30px;
+   border: 1px solid var(--primary-text);
+}
+
+.advantages-section .section-cta:hover {
+   color: var(--primary-text);
+   background: var(--hover-state);
+}
+
+.advantages-section .right {
+   display: grid;
+   place-content: center;
+}
+
+.advantages-section .right .image {
+   width: 80%;
+   margin: 0 auto;
+}
+
+/* End of the advantages section */
+
+
+
+
+
+
+
+/* Start of the discounts section */
+
+.discounts-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.discounts-section .section-container {}
+
+.discounts-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.discounts-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+
+.discounts-section .section-body {
+   height: 470px;
+   min-height: 470px;
+   display: flex;
+   gap: 30px;
+}
+
+.discounts-section .section-body .left,
+.discounts-section .section-body .right {
+   flex: 1;
+}
+
+.discounts-section .left {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.discounts-section .left .text-cards {}
+
+.discounts-section .left .text-card {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   color: var(--primary-text);
+   letter-spacing: 1px;
+   font-family: var(--font-primary);
+   text-transform: uppercase;
+   text-align: end;
+   padding: 15px 20px;
+   border: 1px solid var(--primary-text);
+   margin-bottom: 30px;
+}
+
+.discounts-section .left .text-card span {
+   color: var(--warm-accent);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+}
+
+.discounts-section .left .section-cta-buttons {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.discounts-section .left .section-cta-buttons .button {
+   display: block;
+   width: 100%;
+   max-width: 400px;
+   color: var(--primary-text);
+   font-family: var(--font-accent);
+   text-transform: uppercase;
+   text-align: center;
+   padding: 15px 30px;
+   border: 1px solid var(--primary-text);
+}
+
+.discounts-section .left .section-cta-buttons .button:hover,
+.discounts-section .left .section-cta-buttons .button2 {
+   color: var(--primary-text);
+   background: var(--hover-state);
+}
+
+
+
+
+.discounts-section .right .grid {
+   height: 100%;
+   display: grid;
+   gap: 10px;
+   grid-template-columns: repeat(3, 1fr);
+   /* Creates three equal columns */
+   grid-template-rows: 1fr 1fr 1fr;
+   /* Three rows */
+   grid-template-areas:
+      "item1 item1 item2"
+      "item1 item1 item2"
+      "item3 item3 item2";
+}
+
+.discounts-section .right .grid-item1 {
+   grid-area: item1;
+}
+
+.discounts-section .right .grid-item2 {
+   grid-area: item2;
+}
+
+.discounts-section .right .grid-item3 {
+   grid-area: item3;
+}
+
+.discounts-section .right .grid-item {
+   border-radius: 30px;
+   overflow: hidden;
+}
+
+.discounts-section .right .grid-item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* End of the discounts section */
+
+
+
+
+
+
+
+/* Start of the portfolio section */
+
+.portfolio-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.portfolio-section .section-container {}
+
+.portfolio-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.portfolio-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.portfolio-section .link {
+   color: var(--primary-text);
+   font-weight: bolder;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: flex;
+   align-items: center;
+}
+
+.portfolio-section .link i {
+   font-size: var(--h4-size);
+   margin-left: 10px;
+}
+
+
+
+
+.portfolio-section .grid {
+   width: 100%;
+   height: 300px;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-areas:
+      "item1 item2 item2 item3 item4 item5"
+      "item6 item6 item7 item7 item4 item8";
+   gap: 10px;
+}
+
+.portfolio-section .grid-item {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   border-radius: 20px;
+}
+
+.portfolio-section .grid-item .image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.portfolio-section .grid .item1 {
+   grid-area: item1;
+}
+
+.portfolio-section .grid .item2 {
+   grid-area: item2;
+}
+
+.portfolio-section .grid .item3 {
+   grid-area: item3;
+}
+
+.portfolio-section .grid .item4 {
+   grid-area: item4;
+}
+
+.portfolio-section .grid .item5 {
+   grid-area: item5;
+}
+
+.portfolio-section .grid .item6 {
+   grid-area: item6;
+}
+
+.portfolio-section .grid .item7 {
+   grid-area: item7;
+}
+
+.portfolio-section .grid .item8 {
+   grid-area: item8;
+}
+
+/* End of the portfolio section */
+
+
+
+
+
+
+
+
+/* Start of the promotions section */
+
+.promotions-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.promotions-section .section-container {}
+
+.promotions-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.promotions-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.promotions-section .link {
+   color: var(--primary-text);
+   font-weight: bolder;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: flex;
+   align-items: center;
+}
+
+.promotions-section .link i {
+   font-size: var(--h4-size);
+   margin-left: 10px;
+}
+
+
+
+
+
+
+
+/* End of the promotions section */
+
+
+
+
+
+
+
+
+/* Start of the products section */
+
+.products-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.products-section .section-container {
+   overflow: hidden;
+}
+
+.products-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.products-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.products-section .link {
+   color: var(--primary-text);
+   font-weight: bolder;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: flex;
+   align-items: center;
+}
+
+.products-section .link i {
+   font-size: var(--h4-size);
+   margin-left: 10px;
+}
+
+
+.product-slider .swiper-wrapper {
+   margin-bottom: 50px;
+}
+
+.product__item {}
+
+.product__item:hover {
+   background: var(--hover-state);
+}
+
+.product__item .item__image {
+   width: 100%;
+   margin-bottom: 10px;
+   overflow: hidden;
+}
+
+.product__item .item__image img {
+   width: 100%;
+}
+
+.product__item .item__body {
+   padding: 5px;
+   text-transform: uppercase;
+}
+
+.product__item .item__body .item__title {
+   font-size: var(--h6-size);
+   font-family: var(--font-primary);
+   margin-bottom: 10px;
+}
+
+.product__item .item__body div {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+
+.product__item .item__body div .item__description {
+   font-size: clamp(0.6rem, 1vw, .8rem);
+   letter-spacing: 1px;
+   flex: 1;
+}
+
+.product__item .item__body div .item__cost {
+   font-size: var(--h6-size);
+   font-weight: normal;
+   letter-spacing: 1px;
+   text-align: flex-end;
+   flex: 1;
+}
+
+
+.product-slider .controllers {
+   display: flex;
+   align-items: center;
+}
+
+.product-slider .controllers .scrollbar {
+   position: static;
+   width: 230px;
+}
+
+.product-slider .controllers .product-slider-button-next {
+   margin-left: 10px;
+   font-size: var(--h4-size);
+}
+
+/* End of the products section */
+
+
+
+
+
+
+
+
+
+
+
+/* Start of the staff section */
+
+.staff-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.staff-section .section-container {}
+
+.staff-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.staff-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.staff-section .link {
+   color: var(--primary-text);
+   font-weight: bolder;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: flex;
+   align-items: center;
+}
+
+.staff-section .link i {
+   font-size: var(--h4-size);
+   margin-left: 10px;
+}
+
+
+
+
+
+
+
+/* End of the staff section */
+
+
+
+
+
+
+
+/* Start of the reviews section */
+
+.reviews-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.reviews-section .section-container {}
+
+.reviews-section .section-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.reviews-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.reviews-section .link {
+   color: var(--primary-text);
+   font-weight: bolder;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: flex;
+   align-items: center;
+}
+
+.reviews-section .link i {
+   font-size: var(--h4-size);
+   margin-left: 10px;
+}
+
+
+
+
+
+
+
+/* End of the reviews section */
+
+
+
+
+
+
+
+
+/* Start of the newsletter section */
+
+.newsletter-section {
+   position: relative;
+   width: 100%;
+   padding: 70px 3rem;
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/newsletter.png') no-repeat center / cover;
+   color: var(--light-text);
+}
+
+.newsletter-section .section-container {}
+
+.newsletter-section .section-header {
+   margin-bottom: 300px;
+}
+
+.newsletter-section .tagline {
+   font-size: var(--h1-size);
+   font-weight: bolder;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+
+.newsletter-section .section-body {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.newsletter-section .section-body .text {
+   flex: 1;
+   letter-spacing: .5px;
+}
+
+.newsletter-section #subscriptionForm {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex: 1;
+}
+
+.newsletter-section #subscriptionForm .inputBar {
+   width: 100%;
+   max-width: 270px;
+   border: 1px solid var(--button-accent);
+   padding: 5px 10px;
+}
+
+.newsletter-section #subscriptionForm .submitBtn {
+   color: var(--primary-text);
+   background: var(--hover-state);
+   border: 1px solid var(--border-color);
+   padding: 5px 30px;
+   margin-left: 20px;
+   letter-spacing: .5px;
+}
+
+/* End of the newsletter section */
+
+
+
+
+
+
+/* Start of the contacts section */
+
+.contacts-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px 3rem;
+}
+
+.contacts-section .section-container {}
+
+.contacts-section .section-header {
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.contacts-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+
+.contacts-section .section-body {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contacts-section .headline {
+   font-size: clamp(2rem, 10vw, 6rem);
+   font-weight: 300;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   line-height: 1.2;
+   margin-bottom: 30px;
+}
+
+.contacts-section .contact-info {
+   font-weight: bolder;
+   letter-spacing: 1px;
+}
+
+.contacts-section .contact-info span {
+   font-weight: normal;
+}
+
+.contacts-section .map img {
+   height: 300px;
+}
+
+/* End of the contacts section */
