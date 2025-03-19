@@ -120,6 +120,11 @@ a {
    color: var(--link-color);
 }
 
+a,
+p {
+   font-size: clamp(.8rem, 2vw, 1rem);
+}
+
 a.href {
    color: var(--button-accent);
    text-decoration: underline;
