@@ -18,10 +18,10 @@ const navbar = document.querySelector('.navbar');
 
 onscroll = () => {
    if (pageYOffset > 0) {
-      navbar.style.background = 'var(--navbar-bg)';
+      navbar.classList.add('active');
    }
    else if (pageYOffset === 0) {
-      navbar.style.background = 'none';
+      navbar.classList.remove('active');
    }
 };
 
@@ -57,22 +57,22 @@ const product_slider = new Swiper('.product-slider', {
    },
    
    breakpoints: {
-      // when window width is >= 320px
+      // when window width is >= 400px
       400: {
          slidesPerView: 1,
          spaceBetween: 10
       },
-      // when window width is >= 480px
+      // when window width is >= 600px
       600: {
          slidesPerView: 2,
          spaceBetween: 10
       },
-      // when window width is >= 640px
+      // when window width is >= 800px
       800: {
          slidesPerView: 3,
          spaceBetween: 20
       },
-      // when window width is >= 880px
+      // when window width is >= 1000px
       1000: {
          slidesPerView: 4,
          spaceBetween: 20
