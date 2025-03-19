@@ -1,0 +1,11 @@
+.footer {
+   background: var(--dark-bg);
+   padding-inline: clamp(2rem, 5vw, 3rem);
+}
+
+.footer-container {
+   width: 100%;
+   max-width: 1300px;
+   height: 300px;
+   margin: 0 auto;
+}
