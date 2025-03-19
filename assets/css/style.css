@@ -1091,3 +1091,147 @@
 .reviews-section .review-card .btn-readMore {
    display: block;
    text-decoration: underline;
+   color: var(--dark-text);
+   font-weight: 500;
+   font-family: var(--font-secondary);
+}
+
+.reviews-section .review-card .btn-readMore:hover {
+   color: var(--link-hover);
+}
+
+.reviews-section .review-card .review-date {
+   display: block;
+   font-weight: 500;
+   margin-top: 30px;
+}
+
+/* End of the reviews section */
+
+
+
+
+
+
+
+
+/* Start of the newsletter section */
+
+.newsletter-section {
+   position: relative;
+   width: 100%;
+   padding: 70px clamp(2rem, 5vw, 3rem);
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/newsletter.png') no-repeat center / cover;
+   color: var(--light-text);
+}
+
+.newsletter-section .section-container {}
+
+.newsletter-section .section-header {
+   margin-bottom: 300px;
+}
+
+.newsletter-section .tagline {
+   font-size: var(--h1-size);
+   font-weight: bolder;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+
+.newsletter-section .section-body {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.newsletter-section .section-body .text {
+   flex: 1;
+   letter-spacing: .5px;
+}
+
+.newsletter-section #subscriptionForm {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex: 1;
+}
+
+.newsletter-section #subscriptionForm .inputBar {
+   width: 100%;
+   max-width: 270px;
+   border: 1px solid var(--button-accent);
+   padding: 5px 10px;
+}
+
+.newsletter-section #subscriptionForm .submitBtn {
+   color: var(--primary-text);
+   background: var(--hover-state);
+   border: 1px solid var(--border-color);
+   padding: 5px 30px;
+   margin-left: 20px;
+   letter-spacing: .5px;
+}
+
+/* End of the newsletter section */
+
+
+
+
+
+
+/* Start of the contacts section */
+
+.contacts-section {
+   position: relative;
+   width: 100%;
+   height: max-content;
+   padding: 50px clamp(2rem, 5vw, 3rem);
+}
+
+.contacts-section .section-container {}
+
+.contacts-section .section-header {
+   border-bottom: 1.5px solid var(--primary-text);
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+}
+
+.contacts-section .section-title {
+   color: var(--primary-text);
+   font-size: var(--h3-size);
+   font-weight: bolder;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+
+.contacts-section .section-body {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contacts-section .headline {
+   font-size: clamp(2rem, 10vw, 6rem);
+   font-weight: 300;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   line-height: 1.2;
+   margin-bottom: 30px;
+}
+
+.contacts-section .contact-info {
+   font-weight: bolder;
+   letter-spacing: 1px;
+}
+
+.contacts-section .contact-info span {
+   font-weight: normal;
+}
+
+.contacts-section .map img {
+   height: 300px;
+}
+
+/* End of the contacts section */
