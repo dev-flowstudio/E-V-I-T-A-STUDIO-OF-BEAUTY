@@ -3,8 +3,12 @@
    top: 0;
    left: 0;
    width: 100%;
-   padding: 1rem 3rem;
+   padding: 1rem clamp(2rem, 5vw, 3rem);
    z-index: 90;
+}
+
+.navbar.active {
+   background: var(--navbar-bg);
 }
 
 .navbar-container {
@@ -22,22 +26,24 @@
    flex: 1;
 }
 
-.navbar-container .left-col .nav-logo {
+.navbar-container .nav-logo {
    width: max-content;
    color: var(--primary-text);
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    font-weight: bold;
    font-family: var(--font-primary);
    text-transform: uppercase;
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin-right: 30px;
 }
 
-.navbar-container .left-col .nav-logo .big-text {
+.navbar-container .nav-logo .big-text {
+   line-height: 1;
 }
 
-.navbar-container .left-col .nav-logo hr {
+.navbar-container .nav-logo hr {
    width: 100%;
    height: 2px;
    background: var(--primary-text);
@@ -46,20 +52,41 @@
    transition: .3s;
 }
 
-.navbar-container .left-col .nav-logo .small-text {
-   letter-spacing: 2px;
-   font-size: .6rem;
+.navbar-container .nav-logo .small-text {
+   line-height: 1;
+   letter-spacing: 1px;
+   font-size: .3rem;
    font-family: var(--font-accent);
 }
 
-.navbar-container .left-col .nav-logo:hover {
+.navbar-container .nav-logo:hover {
    color: var(--link-hover);
 }
 
-.navbar-container .left-col .nav-logo:hover hr {
+.navbar-container .nav-logo:hover hr {
    background: var(--link-hover);
 }
 
+
+
+.navbar-container .hamburger {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 5px;
+}
+
+.navbar-container .hamburger span {
+   display: block;
+   width: 25px;
+   height: 2px;
+   background: var(--dark-bg);
+   border-radius: 20px;
+}
+
+.navbar-container .hamburger span:nth-child(2) {
+   width: 15px;
+}
 
 
 .navbar-container .right-col {
@@ -81,7 +108,7 @@
    position: relative;
    color: var(--primary-text);
    font-weight: bold;
-   letter-spacing: 3px;
+   letter-spacing: 2px;
    text-transform: uppercase;
 }
 
@@ -121,4 +148,20 @@
 .navbar-container .right-col .enroll-btn:hover {
    color: var(--primary-text);
    background: var(--hover-state);
+}
+
+.navbar.active .enroll-btn {
+   color: var(--primary-text);
+   border: 1px solid var(--dark-bg);
+}
+
+@media only screen and (max-width:1100px) {
+   
+   .navbar-container .right-col .nav-menu {
+      display: none;
+   }
+}
+
+@media only screen and (max-width:500px) {
+   .navbar {}
 }
