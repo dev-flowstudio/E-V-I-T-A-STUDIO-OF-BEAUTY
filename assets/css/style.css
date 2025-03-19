@@ -12,7 +12,7 @@
 
 .header {
    height: 100vh;
-   padding: 0 5rem;
+   padding: 0 clamp(2rem, 5vw, 5rem);
    background: url('../images/hero.png') no-repeat center / cover;
 }
 
@@ -40,7 +40,7 @@
 
 .hero-title {
    color: var(--headline-text);
-   font-size: clamp(2rem, 10vw, 6.5rem);
+   font-size: clamp(3.5rem, 10vw, 6.5rem);
    font-weight: 350;
    letter-spacing: 20px;
    text-transform: uppercase;
@@ -62,7 +62,7 @@
 .hero-cta-button {
    color: var(--primary-text);
    font-size: 1.5rem;
-   font-size: clamp(.5rem, 1vw, 1.5rem);
+   font-size: clamp(1rem, 1vw, 1.5rem);
    letter-spacing: 2px;
    text-transform: uppercase;
    font-family: var(--font-accent);
@@ -88,7 +88,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 0 3rem;
+   padding: 0 clamp(2rem, 5vw, 3rem);
 }
 
 .about-section .section-container {
@@ -102,17 +102,22 @@
    flex: 1;
 }
 
+.about-section .about-left {}
+
 .about-section .about-left .image1,
 .about-section .about-left .image2 {
    position: absolute;
    width: 300px;
-   top: -200px;
-   right: 100px;
+   top: -10%;
+   left: 150px;
+   border-radius: 0 0 200px 200px;
 }
 
 .about-section .about-left .image2 {
-   top: 100px;
-   right: 200px;
+   width: 320px;
+   top: 70px;
+   left: 0;
+   border-radius: 0 0 250px 0;
 }
 
 .about-section .about-right {
@@ -181,6 +186,17 @@
    font-weight: bolder;
 }
 
+
+@media only screen and (max-width:1200px) {
+   .about-section .section-container {
+      flex-direction: column;
+   }
+}
+
+
+
+
+
 /* End of the about us section */
 
 
@@ -194,7 +210,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
 }
 
 .services-section .section-container {}
@@ -283,7 +299,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
 }
 
 .advantages-section .section-container {}
@@ -372,7 +388,7 @@
 }
 
 .advantages-section .right .image {
-   width: 80%;
+   width: 100%;
    margin: 0 auto;
 }
 
@@ -390,7 +406,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
 }
 
 .discounts-section .section-container {}
@@ -532,7 +548,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
 }
 
 .portfolio-section .section-container {}
@@ -592,8 +608,6 @@
 
 .portfolio-section .grid-item .image {
    width: 100%;
-   height: 100%;
-   object-fit: cover;
 }
 
 .portfolio-section .grid .item1 {
@@ -643,7 +657,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
 }
 
 .promotions-section .section-container {}
@@ -679,11 +693,81 @@
    margin-left: 10px;
 }
 
+.promotions-section .section-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 25px;
+}
 
+.promotion-card {
+   height: 320px;
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+   overflow: hidden;
+}
 
+.promotion-card:hover {
+   background: var(--hover-state);
+   transition: .3s;
+}
 
+.promotion-card .card-image {
+   flex: 2;
+}
 
+.promotion-card .card-image .image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
 
+.promotion-card .card-body {
+   display: flex;
+   flex: 1;
+}
+
+.promotion-card .card-body .card-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 0 5px;
+}
+
+.promotion-card .card-body .tagline {
+   writing-mode: vertical-lr;
+   font-size: .8rem;
+}
+
+.promotion-card .card-title {
+   font-size: var(--h2-size);
+   text-transform: uppercase;
+   font-family: var(--font-primary);
+   font-weight: 500;
+   letter-spacing: 2px;
+   margin-bottom: 20px;
+}
+
+.promotion-card .card-text {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.promotion-card .card-text span {
+   font-weight: bold;
+}
+
+.promotion-card .btn-learnMore,
+.promotion-card .btn-get {
+   width: max-content;
+   font-size: var(--h6-size);
+   color: var(--dark-text);
+   letter-spacing: 1px;
+   font-family: var(--font-primary);
+   text-transform: uppercase;
+   border-bottom: 1px solid var(--dark-bg);
+}
 
 /* End of the promotions section */
 
@@ -700,7 +784,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
 }
 
 .products-section .section-container {
@@ -824,7 +908,7 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
 }
 
 .staff-section .section-container {}
@@ -860,10 +944,51 @@
    margin-left: 10px;
 }
 
+.staff-section .section-body {
+   display: flex;
+   gap: 40px;
+}
+
+.staff-section .section-body .card {
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.staff-section .section-body .card .image {
+   width: 100%;
+   margin-bottom: 10px;
+   border-radius: 0 150px 0 0;
+}
+
+.staff-section .section-body .card .name {
+   font-size: var(--h5-size);
+   font-family: var(--font-primary);
+   font-weight: bolder;
+   margin-bottom: 10px;
+}
+
+.staff-section .section-body .card .position {
+   margin-bottom: 10px;
+   font-weight: 350;
+}
 
 
 
+.staff-section .section-body .card .button {
+   display: block;
+   width: 100%;
+   max-width: 400px;
+   color: var(--primary-text);
+   background: var(--hover-state);
+   font-family: var(--font-secondary);
+   font-weight: 300;
+   text-align: center;
+   padding: 10px 20px;
+   border: 1px solid var(--primary-text);
+}
 
+.staff-section .section-body .card .button:hover {}
 
 
 /* End of the staff section */
@@ -880,10 +1005,24 @@
    position: relative;
    width: 100%;
    height: max-content;
-   padding: 50px 3rem;
+   padding: 50px clamp(2rem, 5vw, 3rem);
+   padding-bottom: 120px;
 }
 
-.reviews-section .section-container {}
+.reviews-section .section-container {
+   position: relative;
+}
+
+.reviews-section .section-container::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: url('../images/advantages.png') no-repeat center / contain;
+   transform: rotateZ(90deg);
+   opacity: .5;
+   z-index: -1;
+}
 
 .reviews-section .section-header {
    display: flex;
@@ -917,137 +1056,38 @@
 }
 
 
-
-
-
-
-
-/* End of the reviews section */
-
-
-
-
-
-
-
-
-/* Start of the newsletter section */
-
-.newsletter-section {
-   position: relative;
-   width: 100%;
-   padding: 70px 3rem;
-   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/newsletter.png') no-repeat center / cover;
-   color: var(--light-text);
-}
-
-.newsletter-section .section-container {}
-
-.newsletter-section .section-header {
-   margin-bottom: 300px;
-}
-
-.newsletter-section .tagline {
-   font-size: var(--h1-size);
-   font-weight: bolder;
-   letter-spacing: 3px;
-   text-transform: uppercase;
-}
-
-.newsletter-section .section-body {
-   width: 100%;
+.reviews-section .section-body {
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   gap: 20px;
+   justify-content: space-around;
 }
 
-.newsletter-section .section-body .text {
-   flex: 1;
-   letter-spacing: .5px;
+.reviews-section .review-card {
+   min-height: 350px;
+   border-right: 1px solid var(--dark-bg);
+   border-bottom: 1px solid var(--dark-bg);
+   text-align: center;
+   padding: 0 20px 20px 30px;
 }
 
-.newsletter-section #subscriptionForm {
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   flex: 1;
+.reviews-section .review-card .pfp {
+   width: 100px;
+   height: 100px;
+   border-radius: 500px;
+   margin-bottom: 5px;
 }
 
-.newsletter-section #subscriptionForm .inputBar {
-   width: 100%;
-   max-width: 270px;
-   border: 1px solid var(--button-accent);
-   padding: 5px 10px;
+.reviews-section .review-card .name {
+   font-family: var(--font-primary);
+   font-size: var(--h5-size);
+   margin-bottom: 5px;
 }
 
-.newsletter-section #subscriptionForm .submitBtn {
-   color: var(--primary-text);
-   background: var(--hover-state);
-   border: 1px solid var(--border-color);
-   padding: 5px 30px;
-   margin-left: 20px;
-   letter-spacing: .5px;
+.reviews-section .review-card .review-text {
+   max-width: 400px;
+   margin: 0 auto;
 }
 
-/* End of the newsletter section */
-
-
-
-
-
-
-/* Start of the contacts section */
-
-.contacts-section {
-   position: relative;
-   width: 100%;
-   height: max-content;
-   padding: 50px 3rem;
-}
-
-.contacts-section .section-container {}
-
-.contacts-section .section-header {
-   border-bottom: 1.5px solid var(--primary-text);
-   padding-bottom: 10px;
-   margin-bottom: 40px;
-}
-
-.contacts-section .section-title {
-   color: var(--primary-text);
-   font-size: var(--h3-size);
-   font-weight: bolder;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-}
-
-
-.contacts-section .section-body {
-   display: flex;
-   justify-content: space-between;
-}
-
-.contacts-section .headline {
-   font-size: clamp(2rem, 10vw, 6rem);
-   font-weight: 300;
-   letter-spacing: 5px;
-   text-transform: uppercase;
-   line-height: 1.2;
-   margin-bottom: 30px;
-}
-
-.contacts-section .contact-info {
-   font-weight: bolder;
-   letter-spacing: 1px;
-}
-
-.contacts-section .contact-info span {
-   font-weight: normal;
-}
-
-.contacts-section .map img {
-   height: 300px;
-}
-
-/* End of the contacts section */
+.reviews-section .review-card .btn-readMore {
+   display: block;
+   text-decoration: underline;
