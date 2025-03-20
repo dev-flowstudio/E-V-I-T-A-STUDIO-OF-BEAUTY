@@ -1,10 +1,9 @@
-/* Light Theme */
 :root {
    /* --- Text Colors --- */
    --primary-text: #1A1A1A;
-   --headline-text: #EDEAE5;
+   --headline-text: #1A1A1A;
    --subheading-text: #555555;
-   --light-text: #FFFCF8;
+   --light-text: #EDEAE5;
    
    /* --- Background Colors --- */
    --navbar-bg: #FFFCF8;
@@ -58,17 +57,3 @@
 .text-h6 {
    font-size: var(--h6-size);
 }
-
-
-/* Dark Theme */
-/* .dark-theme {
-   --primary-text: #EDEDED;
-   --headline-text: #FFFFFF;
-   --subheading-text: #9B59B6;
-   --navbar-bg: #1A1A1A;
-   --sidebar-bg: #242424;
-   --body-bg: #181818;
-   --button-accent: #FF5733;
-   --border-color: #333333;
-   --hover-state: #FF7050;
-} */
