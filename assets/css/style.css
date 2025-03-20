@@ -38,7 +38,7 @@
 }
 
 .hero-title {
-   color: var(--headline-text);
+   color: var(--light-text);
    font-size: clamp(3.5rem, 10vw, 6.5rem);
    font-weight: 350;
    letter-spacing: 20px;
@@ -80,7 +80,9 @@
    margin: 0 auto;
 }
 
-
+.section-container .section-header .link:hover {
+   color: var(--hover-state);
+}
 
 
 
@@ -92,6 +94,7 @@
    width: 100%;
    height: max-content;
    padding: 0 clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .about-section .section-container {
@@ -128,7 +131,6 @@
 }
 
 .about-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -223,6 +225,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .services-section .section-container {}
@@ -237,7 +240,6 @@
 }
 
 .services-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -308,8 +310,6 @@
 
 
 
-
-
 /* Start of the advantages section */
 
 
@@ -318,6 +318,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .advantages-section .section-container {}
@@ -332,7 +333,6 @@
 }
 
 .advantages-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -435,6 +435,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .discounts-section .section-container {}
@@ -449,7 +450,6 @@
 }
 
 .discounts-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -582,7 +582,6 @@
 
 
 
-
 /* Start of the portfolio section */
 
 .portfolio-section {
@@ -590,6 +589,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .portfolio-section .section-container {}
@@ -604,7 +604,6 @@
 }
 
 .portfolio-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -699,6 +698,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .promotions-section .section-container {}
@@ -713,7 +713,6 @@
 }
 
 .promotions-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -803,7 +802,7 @@
 .promotion-card .btn-get {
    width: max-content;
    font-size: var(--h6-size);
-   color: var(--dark-text);
+   color: var(--primary-text);
    letter-spacing: 1px;
    font-family: var(--font-primary);
    text-transform: uppercase;
@@ -813,7 +812,12 @@
 
 @media only screen and (max-width: 700px) {
    .promotion-card {
+      height: max-content;
       flex-direction: column;
+   }
+   
+   .promotion-card .card-body .card-content {
+      width: 100%;
    }
 }
 
@@ -833,6 +837,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .products-section .section-container {
@@ -849,7 +854,6 @@
 }
 
 .products-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -897,7 +901,7 @@
 }
 
 .product__item .item__body .item__title {
-   font-size: var(--h6-size);
+   font-size: clamp(1rem, 2.5vw, 1.2rem);
    font-family: var(--font-primary);
    margin-bottom: 10px;
 }
@@ -959,6 +963,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .staff-section .section-container {}
@@ -973,7 +978,6 @@
 }
 
 .staff-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -1059,6 +1063,9 @@
 
 
 
+
+
+
 /* Start of the reviews section */
 
 .reviews-section {
@@ -1068,6 +1075,7 @@
    padding: 50px clamp(2rem, 5vw, 3rem);
    padding-bottom: 120px;
    overflow: hidden;
+   scroll-margin-top: 64px;
 }
 
 .reviews-section .section-container {
@@ -1095,7 +1103,6 @@
 }
 
 .reviews-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
@@ -1152,7 +1159,7 @@
 .reviews-section .review-card .btn-readMore {
    display: block;
    text-decoration: underline;
-   color: var(--dark-text);
+   color: var(--primary-text);
    font-weight: 500;
    font-family: var(--font-secondary);
 }
@@ -1189,16 +1196,15 @@
 
 
 
-
-
 /* Start of the newsletter section */
 
 .newsletter-section {
    position: relative;
    width: 100%;
-   padding: 70px clamp(2rem, 5vw, 3rem);
    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/newsletter.png') no-repeat center / cover;
+   padding: 70px clamp(2rem, 5vw, 3rem);
    color: var(--light-text);
+   scroll-margin-top: 64px;
 }
 
 .newsletter-section .section-container {}
@@ -1208,6 +1214,7 @@
 }
 
 .newsletter-section .tagline {
+   color: var(--light-text);
    font-size: var(--h1-size);
    font-weight: bolder;
    letter-spacing: 3px;
@@ -1283,6 +1290,7 @@
    width: 100%;
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
+   scroll-margin-top: 64px;
 }
 
 .contacts-section .section-container {}
@@ -1294,7 +1302,6 @@
 }
 
 .contacts-section .section-title {
-   color: var(--primary-text);
    font-size: var(--h3-size);
    font-weight: bolder;
    letter-spacing: 2px;
