@@ -9,7 +9,6 @@
 
 
 /* Start of the header section */
-
 .header {
    height: 100vh;
    padding: 0 clamp(2rem, 5vw, 5rem);
@@ -82,6 +81,10 @@
 }
 
 
+
+
+
+
 /* Start of the about us section */
 
 .about-section {
@@ -93,12 +96,12 @@
 
 .about-section .section-container {
    display: flex;
+   overflow: hidden;
 }
 
 .about-section .col {
    position: relative;
    height: 500px;
-   overflow: hidden;
    flex: 1;
 }
 
@@ -187,9 +190,18 @@
 }
 
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:700px) {
    .about-section .section-container {
       flex-direction: column;
+   }
+   
+   .about-section .col {}
+   
+   .about-section .about-left {}
+   
+   .about-section .about-left .image1,
+   .about-section .about-left .image2 {
+      position: static
    }
 }
 
@@ -283,6 +295,12 @@
 
 .services-section .card .cost span {
    font-size: var(--h3-size);
+}
+
+@media only screen and (max-width: 700px) {
+   .services-section .services-cards {
+      flex-direction: column;
+   }
 }
 
 /* End of the services section */
@@ -390,6 +408,16 @@
 .advantages-section .right .image {
    width: 100%;
    margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+   .advantages-section .section-body {
+      flex-direction: column;
+   }
+   
+   .advantages-section .section-body .left {
+      order: 2;
+   }
 }
 
 /* End of the advantages section */
@@ -532,6 +560,19 @@
    width: 100%;
    height: 100%;
    object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+   .discounts-section .section-container {}
+   
+   .discounts-section .section-body {
+      min-height: max-content;
+      flex-direction: column;
+   }
+   
+   .discounts-section .section-body .left {
+      order: 2;
+   }
 }
 
 /* End of the discounts section */
@@ -769,6 +810,13 @@
    border-bottom: 1px solid var(--dark-bg);
 }
 
+
+@media only screen and (max-width: 700px) {
+   .promotion-card {
+      flex-direction: column;
+   }
+}
+
 /* End of the promotions section */
 
 
@@ -870,7 +918,7 @@
    font-size: var(--h6-size);
    font-weight: normal;
    letter-spacing: 1px;
-   text-align: flex-end;
+   text-align: end;
    flex: 1;
 }
 
@@ -889,6 +937,8 @@
    margin-left: 10px;
    font-size: var(--h4-size);
 }
+
+@media only screen and (max-width: 700px) {}
 
 /* End of the products section */
 
@@ -945,8 +995,9 @@
 }
 
 .staff-section .section-body {
-   display: flex;
+   display: grid;
    gap: 40px;
+   grid-template: auto / repeat(4, 1fr);
 }
 
 .staff-section .section-body .card {
@@ -978,7 +1029,6 @@
 .staff-section .section-body .card .button {
    display: block;
    width: 100%;
-   max-width: 400px;
    color: var(--primary-text);
    background: var(--hover-state);
    font-family: var(--font-secondary);
@@ -990,11 +1040,21 @@
 
 .staff-section .section-body .card .button:hover {}
 
+@media only screen and (max-width: 950px) {
+   .staff-section .section-body {
+      grid-template: auto auto / repeat(2, 1fr);
+   }
+}
+
+@media only screen and (max-width: 500px) {
+   .staff-section .section-body {
+      flex-direction: column;
+      grid-template: auto / 1fr;
+   }
+}
+
 
 /* End of the staff section */
-
-
-
 
 
 
@@ -1007,6 +1067,7 @@
    height: max-content;
    padding: 50px clamp(2rem, 5vw, 3rem);
    padding-bottom: 120px;
+   overflow: hidden;
 }
 
 .reviews-section .section-container {
@@ -1106,6 +1167,21 @@
    margin-top: 30px;
 }
 
+
+@media only screen and (max-width: 700px) {
+   .reviews-section .section-body {
+      flex-direction: column;
+   }
+   
+   .reviews-section .section-body .review-card {
+      margin-bottom: 30px;
+   }
+   
+   .reviews-section .section-body .review-card:last-child {
+      margin-bottom: 0;
+   }
+}
+
 /* End of the reviews section */
 
 
@@ -1147,8 +1223,8 @@
 }
 
 .newsletter-section .section-body .text {
-   flex: 1;
    letter-spacing: .5px;
+   flex: 1;
 }
 
 .newsletter-section #subscriptionForm {
@@ -1172,6 +1248,25 @@
    padding: 5px 30px;
    margin-left: 20px;
    letter-spacing: .5px;
+}
+
+@media only screen and (max-width: 1000px) {
+   .newsletter-section .section-body {
+      flex-direction: column;
+   }
+   
+   .newsletter-section .section-body .text br {
+      display: none;
+   }
+   
+   .newsletter-section #subscriptionForm {
+      width: 100%;
+      justify-content: space-between;
+   }
+   
+   .newsletter-section #subscriptionForm .inputBar {
+      max-width: 100%;
+   }
 }
 
 /* End of the newsletter section */
@@ -1233,5 +1328,24 @@
 .contacts-section .map img {
    height: 300px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+   .contacts-section .section-body {
+      display: block;
+      flex-direction: column;
+   }
+   
+   .contacts-section .contact-info {
+      margin-bottom: 30px;
+   }
+   
+   .contacts-section .map img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
 
 /* End of the contacts section */
