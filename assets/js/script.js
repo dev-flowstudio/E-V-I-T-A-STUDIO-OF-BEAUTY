@@ -3,10 +3,6 @@ window.onload = () => {
    setTimeout(() => {
       preloader.style.display = 'none';
    }, 1000);
-   
-   // Set the header height to window height
-   const header = document.querySelector('.header');
-   header.style.height = window.innerHeight + 'px';
 }
 
 // Basic DOMContentLoaded function
@@ -57,23 +53,23 @@ const product_slider = new Swiper('.product-slider', {
    },
    
    breakpoints: {
-      // when window width is >= 400px
-      400: {
+      // when window width is >= 100px
+      100: {
          slidesPerView: 1,
          spaceBetween: 10
       },
-      // when window width is >= 600px
-      600: {
+      // when window width is >= 550px
+      550: {
          slidesPerView: 2,
          spaceBetween: 10
       },
-      // when window width is >= 800px
-      800: {
+      // when window width is >= 1000px
+      1000: {
          slidesPerView: 3,
          spaceBetween: 20
       },
-      // when window width is >= 1000px
-      1000: {
+      // when window width is >= 1200px
+      1200: {
          slidesPerView: 4,
          spaceBetween: 20
       },
